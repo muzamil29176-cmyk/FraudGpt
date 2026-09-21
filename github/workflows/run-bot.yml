@@ -20,9 +20,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -minstall pip --upgrade
+        python -m pip install --upgrade pip
         pip install python-telegram-bot groq
 
     - name: Run Bot Server
       run: python bot.py
-      
